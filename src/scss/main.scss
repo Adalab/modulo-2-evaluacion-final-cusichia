@@ -1,0 +1,63 @@
+/* @use 'core/reset';
+@use 'components/code';
+@use 'components/links';
+@use 'layout/page';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'pages/index'; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.h1 {
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.sectionFind {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.formStyle {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.ulStyle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.liStyle {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productName {
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+}
+.productPrice {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.btnComprar {
+    background-color: aquamarine;
+    border: none;
+}
