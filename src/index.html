@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Cusichia Online Shop</title>
+		<title>Random Online Store</title>
 		<link
 			href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
 			rel="stylesheet"
@@ -13,34 +13,54 @@
 	</head>
 
 	<body>
-		<div>
-			<header>
-				<h1 class="h1">Online Store</h1>
-			</header>
-			<main>
 
+			<header class="header">
+				<h1 class="h1">Random Online Store</h1>
+				<h2 class="h2">
+					Welcome to the organized chaos of useful, pretty, and totally
+					unexpected things
+				</h2>
+				<p>
+					Clothes? Got ’em. Jewelry? Yep. Electronics, home stuff, a new TV or a
+					bold ring? Absolutely. <br />
+					We don’t follow logic — we follow the joy of variety. <br />
+					Browse, snoop around, discover. You’re bound to find something that
+					surprises you.
+				</p>
+			</header>
+
+      <div>
+			<main>
 				<section class="sectionFind">
-					<form class="formStyle" action="" method="post">
-						<input class="js_inputFind" type="text" name="find" placeholder="Example: Woman" />
-						<button class="js_btnFind" type="submit">Find</button>
+					<form class="sectionFind__formStyle" action="" method="post">
+						<input
+							class="sectionFind__inputStyle js_inputFind"
+							type="text"
+							name="find"
+							placeholder="Example: Woman"
+						/>
+						<button class="sectionFind__btnFind js_btnFind" type="submit">
+							Find
+						</button>
 					</form>
 				</section>
 
-        <section>
-          <ul class="ulStyle js_listProducts">
-            <!-- <li class="liStyle">
-              <img src="https://placecats.com/g/150/150" alt="imagen">
-              <h3 class="productName">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h3>
-              <p class="productPrice">109.95</p>
-              <button class="btnComprar js_btnComprar">Comprar</button>
-            </li>  -->
-
-          </ul>
-        </section>
-
-
+				<div class="mainDiv">
+					<section class="sectionProducts">
+						<h3 class="h3">Productos</h3>
+						<ul class="ulStyle js_listProducts"></ul>
+					</section>
+					<section class="sectionCarrito">
+						<h3 class="h3">Mi carrito</h3>
+						<ul class="sectionCarrito__ulCartStyle js_listCart"></ul>
+            <button class="js_btnEmptyCart">Vaciar carrito</button>
+					</section>
+				</div>
 			</main>
 		</div>
+    <footer class="footer">
+      <p>Random Online Store &copy; 2023</p>
+    </footer>
 		<script src="./js/main.js"></script>
 	</body>
 </html>
