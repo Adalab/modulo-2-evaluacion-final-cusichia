@@ -9,35 +9,44 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./scss/main.scss" />
-		<link rel="icon" href="./images/favicon.png" />
+		<link rel="icon" href="./images/Random_logo-blue_tr.png" />
 	</head>
 
 	<body>
+		<header class="header">
+			<div class="webName">
+				<img
+					class="webName__img"
+					src="./images/Random_logo-white_tr.png"
+					alt="logo"
+				/>
+				<h1 class="webName__h1">Random Online Store</h1>
+			</div>
 
-			<header class="header">
-				<h1 class="h1">Random Online Store</h1>
-				<h2 class="h2">
-					Welcome to the organized chaos of useful, pretty, and totally
-					unexpected things
-				</h2>
-				<p>
-					Clothes? Got ’em. Jewelry? Yep. Electronics, home stuff, a new TV or a
-					bold ring? Absolutely. <br />
-					We don’t follow logic — we follow the joy of variety. <br />
-					Browse, snoop around, discover. You’re bound to find something that
-					surprises you.
-				</p>
-			</header>
+			<h2 class="header__h2">
+				Welcome to the organized chaos of useful, pretty, and totally unexpected
+				things
+			</h2>
+			<p class="header__p">
+				Clothes? Got ’em. Jewelry? Yep. Electronics, a new TV or a bold ring?
+				Absolutely. <br />
+				We don’t follow logic — we follow the joy of variety. <br />
+				Browse, snoop around, discover. You’re bound to find something that
+				surprises you.
+			</p>
+			<div class="header__divider"></div>
+		</header>
 
-      <div>
+		<div>
 			<main>
 				<section class="sectionFind">
 					<form class="sectionFind__formStyle" action="" method="post">
+            <img src="./images/Random_logo-blue_tr.png" alt="logo">
 						<input
 							class="sectionFind__inputStyle js_inputFind"
 							type="text"
 							name="find"
-							placeholder="Example: Woman"
+							placeholder="Example: jacket, ring, TV, random object..."
 						/>
 						<button class="sectionFind__btnFind js_btnFind" type="submit">
 							Find
@@ -53,14 +62,31 @@
 					<section class="sectionCart">
 						<h3 class="h3">Mi carrito</h3>
 						<ul class="sectionCart__ulCartStyle js_listCart"></ul>
-            <button class="sectionCart__emptyCart js_btnEmptyCart">Vaciar carrito</button>
+						<div class="sectionCart__divBtn">
+							<button class="sectionCart__emptyCart js_btnEmptyCart">
+								Vaciar carrito
+							</button>
+						</div>
 					</section>
 				</div>
 			</main>
 		</div>
-    <footer class="footer">
-      <p>Random Online Store &copy; 2023</p>
-    </footer>
+		<div>
+			<p class="note">
+				<b>Note:</b> This website is just for practice. You can try to buy stuff,
+				but nothing will actually happen. <br />
+				Still, you can have fun pretending — fill up your cart, empty it, feel
+				like a big spender. We won’t stop you.
+			</p>
+		</div>
+		<footer class="footer">
+			<p>Random Online Store &copy; 2025</p>
+			<img
+				class="footer__img"
+				src="./images/Random_logo-white_tr.png"
+				alt="logo"
+			/>
+		</footer>
 		<script src="./js/main.js"></script>
 	</body>
 </html>
