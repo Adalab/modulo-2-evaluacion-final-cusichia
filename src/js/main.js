@@ -17,13 +17,26 @@ let cartProducts = [];
 
 // FUNCIONES
 function renderOneProductComprar(oneProduct){
-	let html = `<li class="ulStyle__liStyle">
+	if (oneProduct.price >= 100){
+		let html = `<li class="ulStyle__liStyle">
+              <img class="ulStyle__img" src="${oneProduct.image}" alt="imagen">
+              <h4 class="ulStyle__productNameDestacado">${oneProduct.title}</h4>
+              <p class="ulStyle__productPrice">${oneProduct.price}€</p>
+			  <p class="ulStyle__productName">${oneProduct.rating.rate}</p>
+              <button class="ulStyle__btnComprar js_btnComprar" id="${oneProduct.id}"> Comprar </button>
+            </li>`;
+			return html;
+	} else {
+		let html2 = `<li class="ulStyle__liStyle">
               <img class="ulStyle__img" src="${oneProduct.image}" alt="imagen">
               <h4 class="ulStyle__productName">${oneProduct.title}</h4>
               <p class="ulStyle__productPrice">${oneProduct.price}€</p>
+			  <p class="ulStyle__productName">${oneProduct.rating.rate}</p>
               <button class="ulStyle__btnComprar js_btnComprar" id="${oneProduct.id}"> Comprar </button>
             </li>`;
-	return html;
+			return html2;
+	}
+
 }
 
 function renderOneProductEliminar(oneProduct) {
@@ -31,6 +44,7 @@ function renderOneProductEliminar(oneProduct) {
               <img class="ulStyle__img" src="${oneProduct.image}" alt="imagen">
               <h4 class="ulStyle__productName">${oneProduct.title}</h4>
               <p class="ulStyle__productPrice">${oneProduct.price}€</p>
+			  <p class="ulStyle__productName">${oneProduct.rating.rate}</p>
               <button class="ulStyle__btnEliminar js_btnComprar" id="${oneProduct.id}"> Eliminar </button>
             </li>`;
 	return html;
